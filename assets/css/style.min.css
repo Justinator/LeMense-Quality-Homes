@@ -149,7 +149,7 @@ nav{width:100%}
 .footerNavigation .footerMenu li{list-style-type:none;font-family:"Montserrat",Arial,sans-serif;font-weight:700;text-transform:uppercase}
 .footerNavigation .footerMenu .sub-menu{display:block}
 .footerNavigation .footerMenu .sub-menu li{font-weight:400;font-family:"Open Sans","Lucida Grande","Lucida Sans",Geneva,Arial,sans-serif}
-#darkBlueBack{background-image:url("/wp-content/themes/insightcustom/images/lqh-dark-footer-background.jpg");background-color:#172143;background-size:cover;background-position:bottom right}
+#darkBlueBack{background-image:url("/wp-content/uploads/2020/10/lqh-dark-footer-background-optimized.jpg");background-color:#172143;background-size:cover;background-position:bottom right}
 #footerSecond{background-color:#cc9f5b}
 #footerLogo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 #footerLogo .custom-logo-link img{max-width:75px;height:auto}
@@ -240,7 +240,7 @@ ul{padding:15px;margin:0}
 .blueBack{background-color:#1d2b56;padding:50px 20px;-webkit-box-shadow:5px 5px 10px rgba(0,0,0,0.25);box-shadow:5px 5px 10px rgba(0,0,0,0.25);margin-top:-7px}
 .blueBack h3,.blueBack p{color:#fff;margin-bottom:0}
 .borderedImage{position:relative}
-.servicesContainer{position:relative;z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-shadow:5px 5px 10px rgba(0,0,0,0.25);box-shadow:5px 5px 10px rgba(0,0,0,0.25);background-image:url("/wp-content/uploads/2019/12/kitchen-background.jpg");background-size:cover;background-repeat:no-repeat;background-position:center}
+.servicesContainer{position:relative;z-index:1;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-shadow:5px 5px 10px rgba(0,0,0,0.25);box-shadow:5px 5px 10px rgba(0,0,0,0.25);background-image:url("/wp-content/uploads/2020/10/kitchen-background-optimized.jpg");background-size:cover;background-repeat:no-repeat;background-position:center}
 .servicesContainer:after{position:absolute;z-index:2;top:0;left:0;content:"";height:100%;width:100%;background-color:rgba(29,43,86,0.7)}
 .servicesContainer .serviceWrapper{position:relative;z-index:3;width:100%;background-color:#fff;-webkit-transition:.2s ease;transition:.2s ease}
 .servicesContainer .serviceWrapper .serviceWrapperInner{padding:20px}
@@ -457,7 +457,7 @@ button.swiper-pagination-bullet{border:0;margin:0;padding:0;-webkit-box-shadow:n
 .swiper-container-outer:before{position:absolute;z-index:3;top:70px;left:-25px;font-family:"Montserrat",Arial,sans-serif;font-size:350px;color:#1d2b56;content:'\201c'}
 .swiper-container-outer:after{position:absolute;z-index:2;top:80px;left:-20px;font-family:"Montserrat",Arial,sans-serif;font-size:350px;color:#cc9f5b;content:'\201c'}
 .swiper-container{width:100%;height:100%}
-.swiper-slide{max-width:900px;color:#4d4d4d !important;background:#fff;height:600px !important;background-image:url("/wp-content/uploads/2019/12/LQH-white-background.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;cursor:-webkit-grab;cursor:grab;overflow:hidden}
+.swiper-slide{max-width:900px;color:#4d4d4d !important;background:#fff;height:600px !important;background-image:url("/wp-content/uploads/2020/10/LQH-white-background-optimized.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;cursor:-webkit-grab;cursor:grab;overflow:hidden}
 .swiperNavigationOuter{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .swiperNavigationOuter .swiper-navigation{position:absolute;z-index:1;height:75px;width:50%;bottom:5px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .swiper-button-next,.swiper-button-prev{color:#1d2b56 !important}

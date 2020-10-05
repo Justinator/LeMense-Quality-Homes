@@ -11,7 +11,7 @@
 					<div class="col50">
 						<div class="blockText">
 							<h6>Let's Work Together</h6>
-							<img src="<?php echo get_template_directory_uri(); ?>/images/LeMense-Logo-White.png" alt="LeMense Quality Homes, Inc. Logo in White">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/LeMense-Logo-White-Optimized.png" alt="LeMense Quality Homes, Inc. Logo in White">
 							<p>
 								3609 Glen Oaks Pass<br>
 								Green Bay, WI 54311

@@ -111,50 +111,6 @@ function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-function insightcustom_fonts_url() {
- $fonts_url = '';
-/*********************************************************
-Translators: If there are characters in your language that are not
-supported by Roboto, translate this to 'off'. Do not translate
-into your own language.
-*********************************************************/
- $Montserrat = _x( 'on', 'Montserrat font: on or off', 'insightcustom' );
- $OpenSans = _x( 'on', 'Open Sans font: on or off', 'insightcustom' );
- $font_families = array();
- if ( 'off' !== $Montserrat ) {
-	 $font_families[] = 'Montserrat:400,500,700,900';
- }
- if ( 'off' !== 	$OpenSans ) {
-	$font_families[] = 'Open Sans:400,700';
-}
- if ( in_array( 'on', array($Montserrat, $OpenSans) ) ) {
-	 $query_args = array(
-		 'family' => urlencode( implode( '|', $font_families ) ),
-		 'subset' => urlencode( 'latin,latin-ext' ),
-	 );
-	 $fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
- }
- return esc_url_raw( $fonts_url );
-}
-/**
-* Add preconnect for Google Fonts.
-*
-* @since Twenty Seventeen 1.0
-*
-* @param array  $urls           URLs to print for resource hints.
-* @param string $relation_type  The relation type the URLs are printed.
-* @return array $urls           URLs to print for resource hints.
-*/
-function insightcustom_resource_hints( $urls, $relation_type ) {
- if ( wp_style_is( 'insightcustom-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
-	 $urls[] = array(
-		 'href' => 'https://fonts.gstatic.com',
-		 'crossorigin',
-	 );
- }
- return $urls;
-}
-add_filter( 'wp_resource_hints', 'insightcustom_resource_hints', 10, 2 );
 /*********************************************************
 Advanced Custom Fields Customizations
 *********************************************************/
@@ -194,6 +150,7 @@ Enqueue scripts and styles
 function insightcustom_scripts() {
 	wp_enqueue_style( 'insightcustom-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'insightcustom', get_stylesheet_directory_uri() . '/assets/css/style.min.css' );
+	wp_enqueue_style( 'montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap', false );
 	wp_enqueue_script('AOS', get_template_directory_uri() . '/assets/aos/aos.js');
 	wp_enqueue_style( 'AOS-Styles', get_stylesheet_directory_uri() . '/assets/aos/aos.css');
 	wp_enqueue_script('custom', get_template_directory_uri() . '/assets/js/custom.min.js');
